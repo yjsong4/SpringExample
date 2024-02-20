@@ -22,6 +22,7 @@ public class UsedGoodsService {
 		// 레파지토리를 통해 테이블을 불러오는 메소드 불러와야 한다
 		
 		List<UsedGoods> usedGoodsList = usedGoodsRepository.selectUsedGoodsList();
+		
 		return usedGoodsList;
 	}
 		
