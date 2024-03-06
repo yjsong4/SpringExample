@@ -1,5 +1,7 @@
 package com.syj.spring.ex.jsp.repository;
 
+import java.util.List;
+
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
@@ -18,4 +20,6 @@ public interface UserRepository {
 	
 	public User selectLastUser();
 	
+ 	public List<User> selectUserList();
+ 	
 }
