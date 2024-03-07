@@ -16,8 +16,13 @@ public interface UserRepository {
 			, @Param("email") String email
 			, @Param("introduce") String introduce);
 	
+	public int insertUserByObject(User user);
+	
 	public User selectLastUser();
 	
  	public List<User> selectUserList();
+ 	
+ 	// 전달 받은 email 이 포함된 행의 개수 조회
+ 	public int selectCountByEmail(@Param("email") String email);
  	
 }
