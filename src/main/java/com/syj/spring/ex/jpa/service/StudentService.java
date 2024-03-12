@@ -43,8 +43,8 @@ public class StudentService {
 		
 		// 조회를 통해 얻은 객체의 특정 값을 수정한다.
 		student = student.toBuilder()
-		.dreamJob(dreamJob)
-		.build();
+							.dreamJob(dreamJob)
+							.build();
 		
 		// 수정된 객체를 저장한다.
 		student = studentRepository.save(student);
